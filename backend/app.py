@@ -5,23 +5,16 @@ import json
 import os
 import uuid
 
-app = Flask(__name__, static_folder="../frontend/dist", static_url_path="")
+app = Flask(__name__)
 CORS(app)
 
-@app.route('/')
-def serve_index():
-    return send_from_directory(app.static_folder, 'index.html')
 
-@app.route('/<path:path>')
-def serve_static_files(path):
-    return send_from_directory(app.static_folder, path)
-
-
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 RESPONSE_DIR = os.path.join(BASE_DIR, "Generated_Responses")
 ASSIGNMENTS_DIR = os.path.join(BASE_DIR, "Assignments")
 ATTACHMENT_DIR = os.path.join(BASE_DIR, "Assignment_Files")
-COURSES_FILE = os.path.join(BASE_DIR, "courses.json")
+COURSES_FILE = os.path.join(BASE_DIR, "backend/courses.json")
 NOTIFICATIONS_FILE = os.path.join(BASE_DIR, "backend/notifications.json")
 
 
@@ -38,12 +31,11 @@ def load_courses():
     return {}
 
 
-# ✅ List all assignments with useful metadata
 @app.route('/api/assignments', methods=['GET'])
 def get_assignments():
     assignment_list = []
     
-    with open('backend/courses.json') as f:
+    with open(COURSES_FILE) as f:
         course_data = json.load(f)
     course_map = course_data 
 
