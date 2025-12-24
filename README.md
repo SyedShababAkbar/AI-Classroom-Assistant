@@ -178,7 +178,7 @@ We’ll add a full step-by-step YouTube video to:
 * Setup OpenAI key & run the app
 * Build and test notifications
 
-🔗 **Video Link (TBD)**: [https://youtube.com/@YourChannelName](https://youtube.com/@YourChannelName)
+🔗 **Video Link**: [https://youtube.com/@automate_with_shabab](https://youtu.be/H8ZDPKbvcdo?si=fgcvOlEqrHZD2h2m)
 
 ---
 
