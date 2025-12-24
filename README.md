@@ -223,7 +223,6 @@ If you found this project helpful or inspiring, **support it by following me on 
 🔗 [Instagram](https://www.instagram.com/shababxagents?igsh=NGpwbG5tbm5zbGhr)  
 🔗 [YouTube](https://youtube.com/@the_mr.hacker1?si=g9u7ZSKjvObO8u1U)  
 🔗 [Facebook](https://www.facebook.com/share/1ApwZsmDis/)  
-🔗 [TikTok](https://www.tiktok.com/@the_mr.hacker?_t=ZS-8yTnzU3Ujjd&_r=1)
 
 ---
 
